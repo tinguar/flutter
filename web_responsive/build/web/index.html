@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-SGFM8EFPZB"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-SGFM8EFPZB');
+</script>
+
+  <base href="/">
+  <!-- / -->
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Gabriel Codigo">
+
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-con">
+
+  <title>Gabriel Codigo</title>
+  <link rel="manifest" href="manifest.json">
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body style="overflow: hidden">
+
+<a>Gabriel Codigo</a>
+
+
+  <script src="main.dart.js" type="application/javascript"></script>
+
+  <script>
+    // var serviceWorkerVersion = "384395162";
+    var scriptLoaded = false;
+    function loadMainDartJs() {
+      if (scriptLoaded) {
+        return;
+      }
+      scriptLoaded = true;
+      var scriptTag = document.createElement('script');
+      scriptTag.src = 'main.dart.js';
+      scriptTag.type = 'application/javascript';
+      document.body.append(scriptTag);
+    }
+    loadMainDartJs();
+//     if ('serviceWorker' in navigator) {
+//       window.addEventListener('load', function () {
+
+//         var serviceWorkerUrl = 'flutter_service_worker.js?v=' + serviceWorkerVersion;
+//         navigator.serviceWorker.register(serviceWorkerUrl)
+//           .then((reg) => {
+//             function waitForActivation(serviceWorker) {
+//               serviceWorker.addEventListener('statechange', () => {
+//                 if (serviceWorker.state == 'activated') {
+//                   console.log('Installed new service worker.');
+//                   loadMainDartJs();
+//                 }
+//               });
+//             }
+//             if (!reg.active && (reg.installing || reg.waiting)) {
+// waitForActivation(reg.installing || reg.waiting);
+//             } else if (!reg.active.scriptURL.endsWith(serviceWorkerVersion)) {
+
+//               console.log('New service worker available.');
+//               reg.update();
+//               waitForActivation(reg.installing);
+//             } else {
+//               console.log('Loading app from service worker.');
+//               loadMainDartJs();
+//             }
+//           });
+
+//         setTimeout(() => {
+//           if (!scriptLoaded) {
+//             console.warn(
+//               'Failed to load app from service worker. Falling back to plain <script> tag.',
+//             );
+//             loadMainDartJs();
+//           }
+//         }, 4000);
+//       });
+//     } else {
+//       loadMainDartJs();
+//     }
+  </script>
+
+  <script>
+    window.onload = function () {
+      setTimeout(function () {
+        var loadingIndicator = document.getElementById("a");
+        if (loadingIndicator) {
+          loadingIndicator.remove();
+        }
+      }, 10000);
+    };
+  </script>
+ 
+
+</body>
+
+</html>

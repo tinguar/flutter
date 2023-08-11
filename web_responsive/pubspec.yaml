@@ -1,0 +1,56 @@
+name: web_responsive_ui
+description: Web responsive con flutter
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  animated_background: ^2.0.0
+  animated_text_kit: ^4.2.1
+  firebase_core: ^2.5.0
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  flutter_svg: ^2.0.0+1
+  flutter_widget_from_html_core: any
+  fwfh_webview: ^0.7.0+1
+  go_router: ^6.2.0
+  google_fonts: ^4.0.3
+  intl: ^0.18.0
+  meta_seo: ^3.0.5
+  provider: ^6.0.5
+  universal_html: ^2.0.8
+  url_launcher: ^6.0.18
+
+dev_dependencies:
+  flutter_launcher_icons: ^0.11.0
+  flutter_lints:
+  flutter_test:
+    sdk: flutter
+
+flutter_icons:
+  android: "launcher_icon"
+  ios: true
+  image_path: "assets/icon/icon.png"
+
+flutter:
+  generate: true # Add this line
+  uses-material-design: true
+
+  assets:
+    - assets/
+    - assets/fonts/
+    - assets/images/
+    - assets/svg/
+    - assets/png/
+    - assets/icon/
+
+  fonts:
+    - family: Agustina
+      fonts:
+        - asset: assets/fonts/Agustina.ttf

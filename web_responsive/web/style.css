@@ -1,0 +1,118 @@
+@keyframes tipsy {
+  0 {
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) rotate(360deg);
+  }
+}
+
+body {
+  font-family: helvetica, arial, sans-serif;
+  background-color: #1E1E28;
+}
+
+a {
+  color: #fffbf1;
+  text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+  font-size: 80px;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: -3px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+a:before,
+a:after {
+  content: '';
+  padding: .9em .4em;
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  top: 50%;
+  display: block;
+  border: 15px solid red;
+  transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  animation: 10s infinite alternate ease-in-out tipsy;
+}
+
+a:before {
+  border-color: #FFC107 #FFC107 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+  z-index: -1;
+}
+
+a:after {
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #FFC107 #FFC107;
+  box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
+}
+
+/*
+@import url(https://fonts.googleapis.com/css?family=Signika:700,300,600);
+
+body {
+  background-color: #1E1E28;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.loader {
+  border: 16px solid #FFC107;
+  border-radius: 50%;
+  border: 50px solid;
+  border-top: 50px solid #FFC507;
+  border-right: 50px solid #e93d12;
+  border-bottom: 50px solid #FFC507;
+  border-left: 50px solid #e93d12;
+  width: 30px;
+  height: 30px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+.iconLoading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  position: absolute;
+  height: 94%;
+  border-radius: 50%;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+*/
