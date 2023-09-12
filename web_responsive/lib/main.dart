@@ -17,16 +17,16 @@ void main() async {
   ));
 
   if (kIsWeb) {
-    await Firebase.initializeApp(
-      options: const FirebaseOptions(
-          // apiKey: "",
-          // authDomain: "",
-          // projectId: "",
-          // storageBucket: "",
-          // messagingSenderId: "",
-          // appId: "",
-          // measurementId: ""),
-    );
+      // await Firebase.initializeApp(
+      //   options: const FirebaseOptions(
+      //       // apiKey: "",
+      //       // authDomain: "",
+      //       // projectId: "",
+      //       // storageBucket: "",
+      //       // messagingSenderId: "",
+      //       // appId: "",
+      //       // measurementId: ""),
+      // );
     MetaSEO().config();
   } else {
     await Firebase.initializeApp();
