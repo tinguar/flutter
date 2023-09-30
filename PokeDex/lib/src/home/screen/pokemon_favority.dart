@@ -43,7 +43,8 @@ class _FavoritePokemonScreenState extends State<FavoritePokemonScreen> {
     }
 
     Future<void> gitUrl() {
-      return launchURL(url: 'https://github.com/GbrielGarcia/PokeDex');
+      return launchURL(
+          url: 'https://github.com/tinguar/flutter/tree/main/PokeDex');
     }
 
     return Scaffold(
