@@ -66,7 +66,7 @@ class _HomeState extends State<Home> {
                       color: Colors.black,
                     ),
                     onPressed: () {
-                      launchURL(url: 'https://github.com/GbrielGarcia/PokeDex');
+                      launchURL(url: 'https://github.com/tinguar/flutter/tree/main/PokeDex');
                     },
                   ),
                 )
